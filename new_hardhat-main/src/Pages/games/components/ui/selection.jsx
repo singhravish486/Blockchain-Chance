@@ -15,7 +15,7 @@ export default function MineSelection({ selectedMines, setSelectedMines }) {
   return (
     <Listbox value={selectedMines} onChange={setSelectedMines}>
       {({ open }) => (
-        <>
+        <div>
           <Listbox.Label className="block text-xl font-medium leading-6 text-green-500">
             Select Number of Mines
           </Listbox.Label>
@@ -49,7 +49,7 @@ export default function MineSelection({ selectedMines, setSelectedMines }) {
                     value={option}
                   >
                     {({ selected, active }) => (
-                      <>
+                      <div>
                         <div className="flex items-center">
                           <span
                             className={classNames(
@@ -71,14 +71,14 @@ export default function MineSelection({ selectedMines, setSelectedMines }) {
                             <CheckIcon className="h-5 w-5" aria-hidden="true" />
                           </span>
                         )}
-                      </>
+                      </div>
                     )}
                   </Listbox.Option>
                 ))}
               </Listbox.Options>
             </Transition>
           </div>
-        </>
+        </div>
       )}
     </Listbox>
   );
