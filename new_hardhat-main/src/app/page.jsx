@@ -1,17 +1,17 @@
 "use client";
-import Launcher from "../Pages/launcher";
+import Launcher from "../pages/launcher";
 import { useState, useEffect } from "react";
 import { ethers } from "ethers";
-import Contact from "../Pages/ContactUs";
+import Contact from "../pages/ContactUs";
 import contractABI from "../contract_data/GetSet.json";
 import contractAddress from "../contract_data/GetSet-address.json";
-import Navbar from "../Pages/navbar";
+import Navbar from "../pages/navbar";
 import {
   createBrowserRouter,
   RouterProvider,
 } from 'react-router-dom';
 export default function Page() {
-  const [value, setValue] = useState(""); 
+  const [value, setValue] = useState("");
   const [retrievedValue, setRetrievedValue] = useState(null);
   const [account, setAccount] = useState(null);
   const [provider, setProvider] = useState(null);
@@ -20,11 +20,11 @@ export default function Page() {
   const [depositAmount, setDepositAmount] = useState("");
   const [userBalance, setUserBalance] = useState(null);
 
-  
+
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen">
-      
+
       <Launcher />
     </div>
   );
