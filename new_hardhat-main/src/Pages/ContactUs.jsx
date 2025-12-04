@@ -1,10 +1,10 @@
 import React from "react";
-import './launcher.css'
+import "./launcher.css";
 import Navbar from "./navbar";
 const Contact = () => {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <section className="relative z-10 overflow-hidden bg-slate-800 py-20 dark:bg-dark lg:py-[120px] min-w-full p-11">
         <div className="container">
           <div className="-mx-4 flex flex-wrap lg:justify-between">
@@ -17,7 +17,9 @@ const Contact = () => {
                   GET IN TOUCH WITH US
                 </h2>
                 <p className="mb-9 text-base leading-relaxed text-body-color text-slate-500">
-                At Chance, your experience matters. Whether you're facing an issue, have feedback on gameplay, or want to explore partnership opportunities — our team is here to help.
+                  At Chance, your experience matters. Whether you're facing an
+                  issue, have feedback on gameplay, or want to explore
+                  partnership opportunities — our team is here to help.
                 </p>
                 <div className="mb-8 flex w-full max-w-[370px]">
                   <div className=" mr-6 flex h-[60px] w-full max-w-[60px] items-center justify-center overflow-hidden rounded bg-primary/5 text-primary sm:h-[70px] sm:max-w-[70px]">
@@ -39,7 +41,7 @@ const Contact = () => {
                       Our Location
                     </h4>
                     <p className="text-base text-body-color text-slate-500">
-                      IIITL Lucknow
+                      SVCE Vidyanagar
                     </p>
                   </div>
                 </div>
@@ -79,7 +81,7 @@ const Contact = () => {
                       Phone Number
                     </h4>
                     <p className="text-base text-body-color text-slate-500">
-                      1234567890
+                      Mubashir : 6005926559
                     </p>
                   </div>
                 </div>
@@ -104,7 +106,7 @@ const Contact = () => {
                       Email Address
                     </h4>
                     <p className="text-base text-body-color text-slate-500">
-                      abc@g.com
+                      bhatmubashirjn7@gmail.com
                     </p>
                   </div>
                 </div>
@@ -972,7 +974,7 @@ const ContactTextArea = ({ row, placeholder, name, defaultValue }) => {
           name={name}
           className="w-full resize-none rounded border border-slate-600 border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark dark:text-white"
           defaultValue={defaultValue}
-          style={{background:"#0F172A" }}
+          style={{ background: "#0F172A" }}
         />
       </div>
     </>
@@ -987,7 +989,7 @@ const ContactInputBox = ({ type, placeholder, name }) => {
           type={type}
           placeholder={placeholder}
           name={name}
-          style={{background:"#0F172A"}}
+          style={{ background: "#0F172A" }}
           className="w-full rounded border border-slate-600 border-stroke px-[14px] py-3 text-base text-body-color outline-none focus:border-primary dark:border-dark-3 dark:bg-dark text-white"
         />
       </div>

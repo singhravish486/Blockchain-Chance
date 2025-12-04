@@ -229,7 +229,7 @@ function App() {
             <div className="mb-6">
               <input
                 className="w-full px-4 py-3 rounded-lg bg-[#131922] border border-[#2a3449] focus:ring-2 focus:ring-green-500 focus:border-transparent text-white placeholder-gray-500 transition-all duration-200"
-                type="text"
+                type="number"
                 placeholder="bet"
                 value={betAmount}
                 onChange={(e) => setBetAmount(Number(e.target.value))}
@@ -339,7 +339,9 @@ function App() {
                 </div>
                 <div className="bg-[#1a2234] p-3 rounded-lg">
                   <p className="text-sm text-gray-400">Multiplier</p>
-                  <p className="text-2xl font-bold text-green-400">x{multiplier}</p>
+                  <p className="text-2xl font-bold text-green-400">
+                    x{multiplier}
+                  </p>
                 </div>
                 <div className="bg-[#1a2234] p-3 rounded-lg">
                   <p className="text-sm text-gray-400">Score</p>
@@ -412,8 +414,7 @@ function App() {
                   className={`mt-6 px-6 py-4 rounded-xl text-center text-2xl font-bold animate-pulse ${
                     result.includes("win")
                       ? "bg-green-600/20 text-green-400"
-                      : result.includes("lose") ||
-                        result.includes("House wins")
+                      : result.includes("lose") || result.includes("House wins")
                       ? "bg-red-600/20 text-red-400"
                       : "bg-yellow-600/20 text-yellow-400"
                   }`}
@@ -448,7 +449,8 @@ function App() {
                 <li>Cash out anytime to collect your winnings</li>
               </ol>
               <div className="mt-4 text-sm text-gray-500">
-                Remember: Aces are high, and you have 10 seconds to make your guess!
+                Remember: Aces are high, and you have 10 seconds to make your
+                guess!
               </div>
             </div>
           </div>
