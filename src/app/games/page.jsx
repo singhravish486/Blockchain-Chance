@@ -1,5 +1,5 @@
 "use client";
-import NetflixUIClone from "../../pages/Games/games.jsx";
+import NetflixUIClone from "../../Pages/Games/games.jsx";
 
 export default function GamesPage() {
     return <NetflixUIClone />;
